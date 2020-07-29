@@ -1,4 +1,5 @@
-# Copyright (C) 2013 The Android Open Source Project
+# Copyright (C) 2011 The Android Open Source Project
+# Copyright (C) 2014 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,29 +13,24 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Nyko Playpad / Playpad Pro
+#
+# Amazon/Lab126 Remote Control
+#
 
-key 304 BUTTON_A
-key 305 BUTTON_B
-key 307 BUTTON_X
-key 308 BUTTON_Y
-key 310 BUTTON_L1
-key 311 BUTTON_R1
-key 315 MENU
-key 158 BACK
-key 172 HOME
-key 317 BUTTON_THUMBL
-key 318 BUTTON_THUMBR
+# Navigation buttons
+key  96 DPAD_CENTER
 key 103 DPAD_UP
 key 105 DPAD_LEFT
 key 106 DPAD_RIGHT
 key 108 DPAD_DOWN
 
-axis 0x00 X
-axis 0x01 Y
-axis 0x02 Z
-axis 0x05 RZ
-axis 0x09 GAS
-axis 0x0a BRAKE
-axis 0x10 HAT_X
-axis 0x11 HAT_Y
+# Control buttons
+key 139 MENU
+key 158 BACK
+key 172 HOME
+
+# Media buttons
+key 164 MEDIA_PLAY_PAUSE
+key 168 MEDIA_REWIND
+key 208 MEDIA_FAST_FORWARD
+

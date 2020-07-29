@@ -1,4 +1,5 @@
-# Copyright (C) 2011 The Android Open Source Project
+# Copyright (C) 2010 The Android Open Source Project
+# Copyright (C) 2015 Amazon.com, Inc. or its affiliates. All Rights Reserved. // ACOS_MOD_ONELINE {amazon_controllers}
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,9 +14,14 @@
 # limitations under the License.
 
 #
-# XBox 360 USB Controller
+# Amazon/Lab126 Thunder Game Controller
 #
 
+# Buttons
+key 164   MEDIA_PLAY_PAUSE
+key 168   MEDIA_REWIND
+key 172   HOME
+key 208   MEDIA_FAST_FORWARD
 key 304   BUTTON_A
 key 305   BUTTON_B
 key 307   BUTTON_X
@@ -24,23 +30,19 @@ key 310   BUTTON_L1
 key 311   BUTTON_R1
 key 314   BACK
 key 315   MENU
-key 316   HOME
+key 316   BUTTON_MODE
 key 317   BUTTON_THUMBL
 key 318   BUTTON_THUMBR
 
-# Left and right stick.
-# The reported value for flat is 128 out of a range from -32767 to 32768, which is absurd.
-# This confuses applications that rely on the flat value because the joystick actually
-# settles in a flat range of +/- 4096 or so.
-axis 0x00 X flat 4096
-axis 0x01 Y flat 4096
-axis 0x03 Z flat 4096
-axis 0x04 RZ flat 4096
-
-# Triggers.
-axis 0x02 BRAKE
-axis 0x05 GAS
-
-# Hat.
+# Joystick and game controller axes.
+# ACOS_MOD_BEGIN {amazon_controllers}
+axis 0x00 X flat 0
+axis 0x01 Y flat 0
+axis 0x02 Z flat 0
+axis 0x05 RZ flat 0
+# ACOS_MOD_END {amazon_controllers}
+axis 0x09 GAS
+axis 0x0a BRAKE
 axis 0x10 HAT_X
 axis 0x11 HAT_Y
+
