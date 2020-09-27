@@ -21,8 +21,8 @@ key 0x125    DPAD_RIGHT
 key 0x126    DPAD_DOWN
 key 0x127    DPAD_LEFT
 
-key 0x120    BACK
-key 0x123    MENU
+key 0x120    BUTTON_SELECT
+key 0x123    BUTTON_START
 key 0x12e    BUTTON_A
 key 0x12d    BUTTON_B
 key 0x12f    BUTTON_X
@@ -52,10 +52,10 @@ axis 0x05    RZ
 # axis 0x2f   -HAT_X
 
 # L2 trigger
-axis 0x30   BRAKE
+axis 0x30   LTRIGGER
 
 # R2 trigger
-axis 0x31   GAS
+axis 0x31   RTRIGGER
 
 # L1 trigger
 # axis 0x32
